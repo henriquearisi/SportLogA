@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_report_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relatórios de Progresso"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tv_report_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Visualize seu progresso ao longo do tempo"
+        android:textColor="#757575"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <!-- Botão centralizado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_view_report"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Ver Relatório"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Título do relatório -->
+    <TextView
+        android:id="@+id/tv_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relatório:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="8dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Placeholder do conteúdo do relatório -->
+    <TextView
+        android:id="@+id/tv_report_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seu relatório aparecerá aqui."
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

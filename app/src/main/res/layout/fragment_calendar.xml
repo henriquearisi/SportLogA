@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools2:ignore="VisualLintBounds">
+
+    <!-- Título da página -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendário de Treinos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        tools2:ignore="HardcodedText" />
+
+
+    <!-- Calendário -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/white"
+        android:padding="8dp" />
+
+    <!-- Botão para adicionar treino -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_add_training"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Adicionar treino"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            tools:ignore="HardcodedText"
+            tools2:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Mensagem -->
+    <TextView
+        android:id="@+id/tv_training_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Selecione um dia no calendário"
+        android:textColor="@android:color/darker_gray"
+
+        android:textSize="16sp"
+        tools2:ignore="HardcodedText,TextContrastCheck"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

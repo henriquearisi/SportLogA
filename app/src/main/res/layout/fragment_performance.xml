@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Título da página -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desempenho do Treino"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Campo de texto -->
+    <EditText
+        android:id="@+id/et_performance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Escreva seu desempenho"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColorHint="#8D6E63"
+        tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+
+    <!-- Botão de salvar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_save_performance"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Salvar Desempenho"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Texto de feedback -->
+    <TextView
+        android:id="@+id/tv_saved_performance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desempenho Salvo:"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText"
+        android:visibility="gone" /> <!-- Inicialmente oculto -->
+
+    <!-- Botão para abrir a câmera -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:elevation="4dp"
+            android:text="Tirar foto"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,MissingPrefix" />
+    </LinearLayout>
+
+    <!-- Exibir a foto capturada -->
+    <ImageView
+        android:id="@+id/iv_captured_photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="#E0E0E0"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+</LinearLayout>
